@@ -1,0 +1,25 @@
+<mat-card >
+  <mat-card-header>
+    <mat-card-title>
+        <p>{{testCaseTitle ? testCaseTitle : 'New Test Case Title'}}</p>
+    </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div>
+      <p>Assigned To:</p>
+      <mat-form-field>
+        <mat-select placeholder="Team member">
+          <mat-option *ngFor="let teamMember of TeamMembers" [value]="teamMember">
+            {{teamMember}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante erat, mattis sed tempor in, commodo eget diam.
+    Vestibulum at consectetur risus, placerat ultrices mi. Mauris augue sapien, auctor eget est interdum, ultricies
+    finibus lacus. Vestibulum non tincidunt augue, non finibus nulla. Nunc eleifend lorem sed sem tincidunt, eu rhoncus
+    tellus congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent ex nisi, eleifend id eros sed,
+    tempus mollis arcu. In elementum consequat neque in mollis.
+  </mat-card-content>
+</mat-card>
